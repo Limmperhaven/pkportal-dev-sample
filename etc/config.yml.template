@@ -1,0 +1,36 @@
+app:
+  cost: 10
+  frontend_url: "http://localhost:8080"
+
+server:
+  scheme: http
+  host: localhost
+  port: 5000
+  domain: http://localhost:8080
+  server_domain: http://localhost:5000
+
+psql:
+  host: localhost
+  port: 5432
+  user: postgres
+  pass: postgres
+  dbname: pk-portal
+  sslmode: disable
+  schema: public
+  blacklist: schema_migrations
+  max_idle_conns: 50
+  max_open_conns: 50
+
+s3:
+  host: localhost:9000
+  access_key: pkportaladmin
+  secret_key: pkportaladmin!
+  bucket_name: pkportal-screenshots
+  server_location: us-west-2
+  use_ssl: false
+
+smtp:
+  address: "noreply@pkportaldev.space"
+  host: "smtp.mail.ru"
+  port: "587"
+  password: ""
